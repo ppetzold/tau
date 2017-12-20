@@ -1,0 +1,6 @@
+{
+  "name": "tau",
+  "dependencies": {
+    "google/gtest": "1.8.0"
+  }
+}

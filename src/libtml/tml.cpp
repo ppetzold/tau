@@ -33,7 +33,7 @@ void dlp::pe(clause &q) {
 			return;
 		} else hs.emplace(h = q.hash);
 		//DEBUG(L"finished iteration "<<iter<< L" program len " << szp << endl);
-	}	
+	}
 }
 
 void dlp::pe(const clause *c, const literal *l, const literal *g, clause &q) {
@@ -48,13 +48,3 @@ void dlp::pe(const clause *c, const literal *l, const literal *g, clause &q) {
 }
 
 dlp::~dlp()  { for (const clause *c : *this) delete c; clear(); }
-
-int32_t main() {
-	setlocale(LC_ALL, "");
-	dlp p;
-	clause *q;
-	p.program_read(wcin), q = clause::clause_read(wcin);
-	wcout<<p<<endl<<*q<<endl;
-	p.pe(*q);
-	wcout<<p<<endl<<*q<<endl;
-}
