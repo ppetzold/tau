@@ -7,9 +7,9 @@ Tau-Chain
 
 For now this repository contains an ongoing work on TML (Tau Meta-Language), a Partial Evaluator (Futamura's style) to PFP (Partial Fixed Points, those logics that capture PSPACE over finite ordered structures).
 
-## Installation
+## Dependencies
 
-Before installing, download and install Buckaroo.(More Information about Set Up Buckaroo https://buckaroo.pm/ ):
+Before installing, download and install Buckaroo. (More information about set up Buckaroo https://buckaroo.pm/):
 
 ```bash
 $ buckaroo resolve
